@@ -1,0 +1,7 @@
+# $Id: MANIFEST,v 1.1 2003/01/07 21:03:40 eric Exp $
+CHANGES
+Makefile.PL
+MANIFEST
+PerlTidy.pm
+README
+t/01basic.t

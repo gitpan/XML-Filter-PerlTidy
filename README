@@ -1,0 +1,59 @@
+$Id: README,v 1.1 2003/01/07 21:03:40 eric Exp $
+
+--------
+Abstract
+--------
+
+XML::Filter::PerlTidy is a SAX filter It pipes character data within
+a given element of the source XML document into the Perl::Tidy module,
+and reinjects that module's output into the SAX stream. Perl::Tidy
+produces pretty syntax colored HTML from Perl code.
+
+------------
+Requirements
+------------
+
+This module requires XML::SAX.
+
+------------------
+Basic Installation
+------------------
+
+XML::Filter::PerlTidy may be installed through the CPAN shell in the
+usual manner:
+
+  # perl -MCPAN -e 'install XML::Filter::PerlTidy'
+
+You can also read this README from the CPAN shell:
+
+  # perl -MCPAN -e shell
+  cpan> readme XML::Filter::PerlTidy
+
+And you can install the component from the CPAN prompt as well:
+
+  cpan> install XML::Filter::PerlTidy
+
+-------------------
+Manual Installation
+-------------------
+
+XML::Filter::PerlTidy can also be installed manually.  The latest CPAN
+version can be found at
+<http://www.cpan.org/modules/by-authors/id/C/CH/CHOLET/> or in a
+similarly named directory at your favorite CPAN mirror.
+
+Downloading and unpacking the distribution are left as exercises for
+the reader.  To build and test it:
+
+  perl Makefile.PL
+  make test
+
+When you're ready to install the component:
+
+  make install
+
+It should now be ready to use.
+
+On Win32 systems, replace "make" in the above commands with "nmake".
+The nmake utility can be downloaded from
+C<http://download.microsoft.com/download/vc15/Patch/1.52/W95/EN-US/Nmake15.exe>
