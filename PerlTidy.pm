@@ -1,4 +1,4 @@
-#$Id: PerlTidy.pm,v 1.2 2003/01/10 17:09:01 eric Exp $
+#$Id: PerlTidy.pm,v 1.3 2003/01/13 10:09:48 eric Exp $
 
 package XML::Filter::PerlTidy;
 use strict;
@@ -9,7 +9,7 @@ use XML::SAX::ParserFactory;
 
 use vars qw($VERSION @ISA);
 @ISA = qw(XML::SAX::Base);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 #############################
 package XML::Filter::PerlTidy::EventBlocker;

@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Makefile.PL,v 1.1 2003/01/07 21:03:40 eric Exp $
+# $Id: Makefile.PL,v 1.2 2003/01/13 10:09:48 eric Exp $
 
 use ExtUtils::MakeMaker;
 
@@ -9,7 +9,9 @@ WriteMakefile(
     ABSTRACT     => 'SAX filter character data through Perl::Tidy',
     VERSION_FROM => 'PerlTidy.pm',
     PM           => { 'PerlTidy.pm' => '$(INST_LIBDIR)/PerlTidy.pm' },
-    PREREQ_PM    => { XML::SAX::Base => 0,
+    PREREQ_PM    => {
+                      Perl::Tidy => 0,
+                      XML::SAX::Base => 0,
                       XML::Filter::BufferText => 0,
                       XML::SAX::Writer => 0,
                     },
